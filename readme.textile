@@ -1,0 +1,35 @@
+
+h2. Introduction :
+
+Ce projet contient les sources nécessaires à la [formation JSF2|http://zenika.com/formation_jsf2.php]
+
+h2. Repository maven à utiliser :
+
+Le repository permettant de télécharger les sources nécessaires est disponible à l'adresse suivante :
+
+<code>
+<mirrors>
+    <mirror>
+      <id>cestpasdur</id>
+      <mirrorOf>*</mirrorOf>
+      <name>CestPasDur repository</name>
+      <url>http://nexus.cestpasdur.com/nexus/content/groups/everything/</url>
+    </mirror>
+</mirrors>
+
+</code>
+
+h2. Lancer le serveur de l'application.
+
+Pour lancer le serveur, il suffit de se positionner sur le tp correspondant, tp1, tp2, tp3 et de lancer la commande : 
+
+<code>
+	mvn jetty:run
+</code>
+
+Celle-ci téléchargera toutes les dépendances nécessaires et lancera une instance du serveur jetty sur le port 8080
+
+
+h2. Javadoc :
+
+http://javaserverfaces.java.net/nonav/docs/2.1/javadocs/index.html
