@@ -3,8 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-        >
+      xmlns:ui="http://java.sun.com/jsf/facelets">
 <head>
     <style type="text/css ">
         .red {
@@ -15,16 +14,17 @@
 <h:body>
 
 
+
     <h:form>
+        
         <h:panelGrid columns="2">
             <h:outputLabel for="prenom" value="Saisir un prénom"></h:outputLabel>
             <h:inputText id="prenom" label="Prénom" value="#{helloworldManagedbean.qui}" required="true" />
-
+			
 
             <h:outputLabel for="email" value="Saisir un email"></h:outputLabel>
-            <h:inputText id="email" label="Email" value="#{helloworldManagedbean.email}"
-                    >
-
+            <h:inputText id="email" label="Email" value="#{helloworldManagedbean.email}" >
+                <f:validator validatorId="com.societe.validators.EmailValidator"/>
             </h:inputText>
 
         </h:panelGrid>

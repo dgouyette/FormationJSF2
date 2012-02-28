@@ -1,7 +1,7 @@
 
 h2. Introduction :
 
-Ce projet contient les sources nécessaires à la [formation JSF2|http://zenika.com/formation_jsf2.php]
+Ce projet contient les sources nécessaires à la formation JSF2 : http://zenika.com/formation_jsf2.php
 
 h2. Repository maven à utiliser :
 
