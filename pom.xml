@@ -17,7 +17,6 @@
     </properties>
 
     <modules>
-        <module>blog</module>
         <module>tp1</module>
         <module>tp3</module>
         <module>tp4</module>
