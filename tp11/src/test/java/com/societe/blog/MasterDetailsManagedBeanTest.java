@@ -1,5 +1,8 @@
 package com.societe.blog;
 
+import java.io.File;
+import java.io.IOException;
+
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.jsfunit.api.InitialPage;
@@ -7,15 +10,13 @@ import org.jboss.jsfunit.jsfsession.JSFClientSession;
 import org.jboss.jsfunit.jsfsession.JSFServerSession;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
-import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import java.io.File;
-import java.io.IOException;
-
 
 @RunWith(Arquillian.class)
+@Ignore
 public class MasterDetailsManagedBeanTest {
 
 

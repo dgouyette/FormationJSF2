@@ -13,6 +13,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>3.0.6.RELEASE</spring.version>
         <jetty.port>8080</jetty.port>
+        <myfaces.version>2.1.3</myfaces.version>
+        <sun.ri.version>2.1.13</sun.ri.version>
 
     </properties>
 
@@ -28,26 +30,26 @@
             <dependency>
                 <groupId>org.apache.myfaces.core</groupId>
                 <artifactId>myfaces-impl</artifactId>
-                <version>2.1.3</version>
+                 <version>${myfaces.version}</version>
             </dependency>
 
 
             <dependency>
                 <groupId>org.apache.myfaces.core</groupId>
                 <artifactId>myfaces-api</artifactId>
-                <version>2.1.3</version>
+                <version>${myfaces.version}</version>
             </dependency>
 
 
             <dependency>
                 <groupId>com.sun.faces</groupId>
                 <artifactId>jsf-api</artifactId>
-                <version>2.1.4</version>
+                <version>${sun.ri.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.sun.faces</groupId>
                 <artifactId>jsf-impl</artifactId>
-                <version>2.1.4</version>
+                <version>${sun.ri.version}</version>
             </dependency>
 
 

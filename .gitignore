@@ -5,3 +5,7 @@ target
 tmp
 logs
 /.idea/
+.project
+.settings/
+.classpath
+.classpath
