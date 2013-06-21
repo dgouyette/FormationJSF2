@@ -257,6 +257,13 @@
     </build>
 
 
+    <repositories>
+        <repository>
+            <id>CestPasDur</id>
+            <url>http://nexus.cestpasdur.com/nexus/content/groups/everything/</url>
+        </repository>
+    </repositories>
+
 
 
 
