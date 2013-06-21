@@ -11,10 +11,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.version>3.0.6.RELEASE</spring.version>
+        <spring.version>3.2.3.RELEASE</spring.version>
         <jetty.port>8080</jetty.port>
-        <myfaces.version>2.1.3</myfaces.version>
-        <sun.ri.version>2.1.13</sun.ri.version>
+        <myfaces.version>2.1.11</myfaces.version>
+        <sun.ri.version>2.1.16</sun.ri.version>
 
     </properties>
 
@@ -150,7 +150,7 @@
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
-                <version>4.2.0.Final</version>
+                <version>5.0.1.Final</version>
             </dependency>
 
 
@@ -179,7 +179,7 @@
             <dependency>
                 <groupId>javax.persistence</groupId>
                 <artifactId>persistence-api</artifactId>
-                <version>1.0</version>
+                <version>1.0.2</version>
             </dependency>
 
 
@@ -199,24 +199,24 @@
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>10.0.1</version>
+                <version>14.0.1</version>
             </dependency>
 
             <!-- Logs -->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
-                <version>1.6.2</version>
+                <version>1.7.5</version>
             </dependency>
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>0.9.30</version>
+                <version>1.0.13</version>
             </dependency>
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.10</version>
+                <version>4.11</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -230,14 +230,35 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.3.2</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>1.0</version>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <configuration>
+                            <comparisonmethod>mercury</comparisonmethod>
+                        </configuration>
+                        <goals>
+                            <goal>display-dependency-updates</goal>
+                            <goal>display-plugin-updates</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
 
         </plugins>
     </build>
+
+
+
+
 
 
 </project>
