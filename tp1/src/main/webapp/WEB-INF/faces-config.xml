@@ -5,5 +5,9 @@
 	version="2.0">
 
 
+    <lifecycle>
+        <phase-listener>listeners.PhaseListenerLogger</phase-listener>
+    </lifecycle>
+
 
 </faces-config>
